@@ -137,7 +137,6 @@
     )
   )
 )
-
 ;; Simulated musical elements representing different exchange eras
 (define-public (play-era-theme (era uint))
   (let ((exchange-method (unwrap! (map-get? exchanges era) (err u404))))
