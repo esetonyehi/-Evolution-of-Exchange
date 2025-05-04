@@ -141,8 +141,7 @@
 (define-public (play-era-theme (era uint))
   (let ((exchange-method (unwrap! (map-get? exchanges era) (err u404))))
     (begin
-      (print (concat "Playing musical theme for: " (get method exchange-method)))
-      
+      (print (concat "Playing musical theme for: " (get method exchange-method)))      
       ;; Different musical characteristics for each era
       (if (is-eq era BARTER_ERA)
         (print "Musical theme: Simple, primal rhythms with call and response patterns")
