@@ -70,7 +70,6 @@
     (ok true)
   )
 )
-
 ;; Function to simulate an exchange in a particular era
 (define-public (perform-exchange (era uint) (amount uint) (sender principal) (recipient principal))
   (let ((exchange-method (unwrap! (map-get? exchanges era) (err u404))))
