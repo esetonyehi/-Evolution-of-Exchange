@@ -93,7 +93,6 @@
     )
   )
 )
-
 ;; Function to get information about a specific exchange era
 (define-read-only (get-exchange-info (era uint))
   (map-get? exchanges era)
